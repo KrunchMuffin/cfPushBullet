@@ -1,6 +1,6 @@
 Changelog:
 * 28/05/2014
-	- Added file push cfc
+	- Added pushbullet.cfc (currently only for pushing files)
 
 PushBullet is a fantastic app to quickly & easily transfer files from your computer to your mobile device, as well as notes, links, lists & addresses.
 
