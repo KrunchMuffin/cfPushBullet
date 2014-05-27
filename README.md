@@ -2,7 +2,7 @@ Collection of ColdFusion CFC files for the PushBullet v2 API.
 
 Example AJAX call:
 
-```ajax
+```jquery
 function pushThis(filePath){
 	$.ajax({
 		url: 'cfc/pushbullet.cfc?method=pushFile',
