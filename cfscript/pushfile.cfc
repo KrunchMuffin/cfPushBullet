@@ -10,11 +10,13 @@
 	
 	component {
 
-		/* REQUIRED */
+		/* REQUIRED - leave in colon at end of api key variable*/
 		variables.apiURL = 'https://api.pushbullet.com/v2';
-		variables.apiKey = '';
+		variables.apiKey = ':';
 
 		remote void function pushThis(required string file, required string dev_id) {
+		
+			var b64key = toBase64(#variables.apiKey#);
 
 			var fileName = getFileFromPath(#arguments.file#);
 			var mimeType = fileGetMimeType(#arguments.file#);
@@ -23,8 +25,7 @@
 			var ur = new http();
 			ur.setURL('#variables.apiURL#/upload-request');
 			ur.setMethod('GET');
-			ur.setUsername('#variables.apiKey#');
-			ur.setPassword('');
+			ur.addParam(type="header", name="Authorization", value="Basic #b64key#");
 			ur.addParam(type="url", name="file_name", value="#fileName#");
 			ur.addParam(type="url", name="file_type", value="#mimeType#");
 			urResult = ur.send().getPrefix();
@@ -50,8 +51,7 @@
 			var pf = new http();
 			pf.setURL('#variables.apiURL#/pushes');
 			pf.setMethod('POST');
-			pf.setUsername('#variables.apiKey#');
-			pf.setPassword('');
+			pf.addParam(type="header", name="Authorization", value="Basic #b64key#");
 			pf.addParam(type="formfield", name="type", value="file");
 			pf.addParam(type="formfield", name="device_iden", value="#dev_id#");
 			pf.addParam(type="formfield", name="file_name", value="#fileName#");
