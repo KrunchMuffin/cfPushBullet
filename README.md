@@ -1,6 +1,6 @@
 Changelog:
 
-28/05/2014
+**28/05/2014**
 - Added cfscript files for retrieving device & contact list 
 - Added pushbullet.cfc (currently only for pushing files)
 
