@@ -2,7 +2,7 @@
 
 	/**
 	*
-	* @file  cfc/_pb/cfscript/pushfile.cfc
+	* @file  cfscript/pushfile.cfc
 	* @author  Matt Jones
 	* @description	push file to device
 	*
