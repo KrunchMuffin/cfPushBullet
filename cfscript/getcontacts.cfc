@@ -4,7 +4,7 @@
 	*
 	* @file  cfscript/getcontacts.cfc
 	* @author  Matt Jones
-	* @description	Retrive contact list from PushBullet API
+	* @description	Retrieve contact list from PushBullet API
 	*
 	*/
 	

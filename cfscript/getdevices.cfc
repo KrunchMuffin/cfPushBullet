@@ -4,7 +4,7 @@
 	*
 	* @file  cfscript/detdevices.cfc
 	* @author  Matt Jones
-	* @description	Retrive device list from PushBullet API
+	* @description	Retrieve device list from PushBullet API
 	*
 	*/
 	
