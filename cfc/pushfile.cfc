@@ -3,10 +3,10 @@
 	<!--- REQUIRED --->
 	<cfset apiURL = 'https://api.pushbullet.com/v2'>
 	<cfset apikey = ''>
-	<cfset deviceIden = ''>
-	
+
 	<cffunction name='pushFile' returntype='void' access='remote'>
 		<cfargument name='file' type='string' required='true'>
+		<cfargument name='deviceIden' type='string' required='true'>
 
 		<!--- set filename & get mime type --->
 		<cfset fileName = getFileFromPath(#arguments.file#)>
