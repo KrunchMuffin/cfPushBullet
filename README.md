@@ -8,7 +8,7 @@
 
 PushBullet is a fantastic app to quickly & easily transfer files from your computer to your mobile device, as well as notes, links, lists & addresses.
 
-To my knowledge this is the first ColdFusion wrapper for the PushBullet API.
+cfPushBullet was born out of nessecity for a pure ColdFusion solution to interface with PushBullet. To my knowledge this is the first ColdFusion wrapper for the PushBullet API.
 
 **Examples**
 
