@@ -15,7 +15,7 @@
 			var h = new http();
 			h.setURL('https://api.pushbullet.com/v2/devices');
 			h.setMethod('GET');
-			h.setUsername('');
+			h.setUsername('APIKEY');
 			h.setPassword('');
 			h.setResolveURL('true');
 			result = h.send().getPrefix();
