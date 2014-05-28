@@ -16,11 +16,11 @@ cfPushBullet was born out of nessecity for a pure ColdFusion solution to interfa
 Example AJAX call for sending files:
 
 ```javascript
-function pushThis(filePath){
+function pushThis(filePath, dev_id){
 	$.ajax({
 		url: 'cfc/pushbullet.cfc?method=pushFile',
 		type: 'POST',
-		data: { file: filePath },
+		data: { file: filePath, deviceIden: dev_id },
 	})
 }
 ```
