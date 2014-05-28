@@ -22,27 +22,27 @@ Example AJAX call for showing devices:
 
 ```javascript
 $(function(){
-	    $.ajax({
-	        url: 'cfscript/getdevices.cfc?method=getList',
-	        type: 'GET',
-	        dataType: 'JSON',
-	        success: function(data){
-	        	console.log(data);
-	        }
-	    })
+	$.ajax({
+		url: 'cfscript/getdevices.cfc?method=getList',
+		type: 'GET',
+		dataType: 'JSON',
+		success: function(data){
+			console.log(data);
+		}
 	})
+})
 ```
 Example AJAX call for showing contacts:
 
 ```javascript
 $(function(){
-            $.ajax({
-                url: 'cfscript/getcontacts.cfc?method=getList',
-                type: 'GET',
-                dataType: 'JSON',
-                success: function(data){
-                        console.log(data);
+	$.ajax({
+        	url: 'cfscript/getcontacts.cfc?method=getList',
+		type: 'GET',
+		dataType: 'JSON',
+		success: function(data){
+			console.log(data);
                 }
-            })
-        })
+	})
+})
 ```
