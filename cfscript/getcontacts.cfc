@@ -15,7 +15,7 @@
 			var h = new http();
 			h.setURL('https://api.pushbullet.com/v2/contacts');
 			h.setMethod('GET');
-			h.setUsername('v12IMhm39LevgNJjdvoRlOJnMFZ672kqHXuju4yWfMUYm');
+			h.setUsername('APIKEY');
 			h.setPassword('');
 			h.setResolveURL('true');
 			result = h.send().getPrefix();
