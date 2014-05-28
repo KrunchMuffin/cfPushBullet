@@ -4,9 +4,12 @@ Changelog:
 - Added cfscript files for retrieving device & contact list 
 - Added pushbullet.cfc (currently only for pushing files)
 
+**Introduction**
 PushBullet is a fantastic app to quickly & easily transfer files from your computer to your mobile device, as well as notes, links, lists & addresses.
 
 To my knowledge this is the first ColdFusion wrapper for the PushBullet API.
+
+**Examples**
 
 Example AJAX call for sending files:
 
