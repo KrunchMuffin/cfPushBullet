@@ -4,7 +4,7 @@
 	*
 	* @file  cfc/_pb/cfscript/pushfile.cfc
 	* @author  Matt Jones
-	* @description	Retrieve contact list from PushBullet API
+	* @description	push file to device
 	*
 	*/
 	
